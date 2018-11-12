@@ -2,20 +2,6 @@
 body {
   font-size: 62.5%;
 }
-#blueLines {
-  background-image: url('https://www.dhccare.com/media/wysiwyg/content/giftguide/back-school-blue-lines.svg');
-  background-repeat: repeat repeat;
-  background-size: 10px 43px;
-  width: 1400px;
-  margin: 0 auto;
-}
-#row0 {
-  width: 1400px;
-  height: 60px;
-  background: #fff;
-  z-index: 1;
-  position: absolute;
-}
 .content-wrapper {
   max-width: 1280px;
   font-weight: 300;
@@ -23,7 +9,6 @@ body {
   padding-top: 60px;
   z-index: 10;
   position: relative;
-  border-left: 1px solid #e53935;
 }
 .content-wrapper a {
   text-decoration: none;
@@ -68,19 +53,17 @@ body {
 .cms-page-view .column.main img {
   margin: 0 auto 20px auto;
 }
-#row1 .header-shield {
+#row1 .header-img {
   float: left;
-  width: 339px;
   margin-top: 1%;
-  margin-left: 10%;
 }
-#row1 .header-copy {
+/* #row1 .header-copy {
   float: right;
   text-align: left;
   width: 58%;
   margin-top: 5%;
   padding-right: 10%;
-}
+} */
 #row2, #row4 {
   display: flex;
   justify-content: space-between;
@@ -91,6 +74,7 @@ body {
 }
 #row3 {
   margin: 60px auto;
+  text-align: center;
 }
 .product-item-link {
   text-transform: none;
@@ -109,12 +93,12 @@ body {
   margin: 0;
   padding-bottom: 20px;
 }
-#row5 .blog-image {
+#row5 .bottom-image {
   width: 100%;
   display: inline-block;
   float: right;
 }
-#row5 .blog-text {
+#row5 .bottom-copy {
   text-align: left;
   position: absolute;
   margin-top: 7%;
@@ -122,10 +106,10 @@ body {
   display: inline-block;
   width: 32%;
 }
-#row5 .blog-text h2 {
+#row5 .bottom-copy h2 {
   margin-bottom: 1rem;
 }
-#row5 .blog-text p {
+#row5 .bottom-copy p {
   margin-bottom: 4rem;
 }
 #row5 a {
@@ -164,17 +148,8 @@ body {
 }
 /* --------------------------- Mobile & Tablet --------------------------- */
 @media only all and (max-width: 1279px) {
-  #blueLines {
-    width: 100%;
-    padding: 0 10px;
-  }
   .column {
     margin-top: 0;
-  }
-  #row0 {
-    width: 100%;
-    height: 40px;
-    margin-left: -10px;
   }
   .content-wrapper {
     margin: 0 auto;
@@ -191,12 +166,12 @@ body {
     margin: 0 auto;
     padding-left: 1%;
   }
-  #row1 .header-shield {
+  #row1 .header-img {
     margin: 0 auto;
     float: none;
     width: 100%;
   }
-  #row1 .header-shield img {
+  #row1 .header-img img {
     margin: 0 auto;
     width: 100%;
   }
@@ -225,17 +200,17 @@ body {
     margin: 40px auto 0 auto;
     padding-bottom: 10px;
   }
-  #row5 .blog-image {
+  #row5 .bottom-image {
     float: none;
   }
-  #row5 .blog-text {
+  #row5 .bottom-copy {
     position: relative;
     width: 100%;
     text-align: center;
     margin: 0 auto 20px auto;
     display: block;
   }
-  #row5 .blog-text p {
+  #row5 .bottom-copy p {
     margin-bottom: 2rem;
   }
 } /* mobile and tablet */
@@ -259,12 +234,12 @@ body {
     margin: 0 auto;
     /* padding-left: 1%; */
   }
-  #row1 .header-shield {
+  #row1 .header-img {
     margin: 0 auto;
     float: left;
     width: 30%;
   }
-  #row1 .header-shield img {
+  #row1 .header-img img {
     margin: 0 auto;
     width: 100%;
   }
@@ -284,19 +259,19 @@ body {
   #row5 {
     padding-bottom: 50px;
   }
-  #row5 .blog-image {
+  #row5 .bottom-image {
     width: 100%;
     display: inline-block;
     float: right;
   }
-  #row5 .blog-text {
+  #row5 .bottom-copy {
     width: 40%;
     text-align: left;
     position: absolute;
     margin: -20px 0 10px 10px;
     display: inline-block;
   }
-  #row5 .blog-text h2 {
+  #row5 .bottom-copy h2 {
     font-size: 32px;
   }
 } /*  tablet exceptions */
